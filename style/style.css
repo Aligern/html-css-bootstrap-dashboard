@@ -1,1 +1,26 @@
 /* Reset */
+a {
+    text-decoration: none;
+}
+/* my style */
+.-ls-debug {
+    border: 1px solid red;
+}
+nav { 
+    height: 60px;
+}
+main {
+    width: calc(100% - 200px);
+    padding-top: 60px;
+    overflow-y: auto;
+    height: 100%;
+}
+#sidebar {
+    width: 200px;
+    height: 100%;
+    padding-top: 60px;
+}
+
+#blue-hero {
+    background-color: #1B72E8
+}
