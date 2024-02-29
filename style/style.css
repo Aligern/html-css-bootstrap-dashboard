@@ -2,6 +2,9 @@
 a {
     text-decoration: none;
 }
+ul {
+    list-style: none;
+}
 /* my style */
 .-ls-debug {
     border: 1px solid red;
@@ -16,18 +19,20 @@ a {
     --color-ls-hero-bg: #1b72e8;
     --color-ls-sidebar-bg: #051e34;
 }
-
+body {
+    font-family: "Roboto", sans-serif;
+}
 nav { 
     height: 60px;
 }
 main {
-    width: calc(100% - 200px);
+    width: calc(100% - 150px);
     padding-top: 60px;
     overflow-y: auto;
     height: 100%;
 }
 #sidebar {
-    width: 200px;
+    width: 150px;
     height: 100%;
     padding-top: 60px;
     background-color: var(--color-ls-sidebar-bg);
@@ -37,6 +42,24 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
+#sidebar ul>li {
+    padding-left: 5px;
+    max-width: 82px;
+    text-align: center;
+}
+#sidebar ul>li:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.411);
+}
+#bottom-sidebar {
+    align-self: center;
+    max-width: 80px;
+    cursor: pointer;
+    padding: 5px;
+}
+#bottom-sidebar:hover {
+    background-color: rgba(255, 255, 255, 0.411);
+}
 #blue-hero {
     background-color: #1B72E8
 }
@@ -45,4 +68,24 @@ main {
 }
 .data-width {
     min-width: 105px;
+}
+
+@media  screen and (max-width:576px) {
+    .list-none {
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    main {
+        width: 100%;
+    }
+    ul {
+        padding: 0;
+    }
+    #sidebar {
+        width: 60px;
+    }
+    #sidebar span {
+        display: none;
+    }
 }
