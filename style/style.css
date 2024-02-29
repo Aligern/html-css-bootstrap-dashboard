@@ -6,6 +6,12 @@ a {
 .-ls-debug {
     border: 1px solid red;
 }
+.-ls-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+/* general */
 nav { 
     height: 60px;
 }
