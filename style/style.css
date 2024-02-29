@@ -12,6 +12,11 @@ a {
     border-radius: 50%;
 }
 /* general */
+:root {
+    --color-ls-hero-bg: #1b72e8;
+    --color-ls-sidebar-bg: #051e34;
+}
+
 nav { 
     height: 60px;
 }
@@ -25,6 +30,12 @@ main {
     width: 200px;
     height: 100%;
     padding-top: 60px;
+    background-color: var(--color-ls-sidebar-bg);
+    background-image: url(../img/sidebar-bg.png);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #blue-hero {
     background-color: #1B72E8
