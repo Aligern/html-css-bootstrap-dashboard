@@ -43,3 +43,6 @@ main {
 .graph-link {
     text-decoration: underline;
 }
+.data-width {
+    min-width: 105px;
+}
