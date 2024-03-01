@@ -14,6 +14,9 @@ ul {
     height: 35px;
     border-radius: 50%;
 }
+.-ls-number {
+    font-size: 2em;
+}
 /* general */
 :root {
     --color-ls-hero-bg: #1b72e8;
@@ -24,6 +27,10 @@ body {
 }
 nav { 
     height: 60px;
+}
+#logo-small {
+    width: 50px;
+    display: none;
 }
 main {
     width: calc(100% - 150px);
@@ -44,7 +51,7 @@ main {
 }
 #sidebar ul>li {
     padding-left: 5px;
-    max-width: 82px;
+    max-width: 85px;
     text-align: center;
 }
 #sidebar ul>li:hover {
@@ -63,13 +70,16 @@ main {
 #blue-hero {
     background-color: #1B72E8
 }
+
 .graph-link {
     text-decoration: underline;
 }
 .data-width {
     min-width: 105px;
 }
+/* modal */
 
+/* media query */
 @media  screen and (max-width:576px) {
     .list-none {
         display: none;
@@ -82,10 +92,19 @@ main {
     ul {
         padding: 0;
     }
+    #logo-small {
+        display: block;
+    }
+    #logo-big {
+        display: none;
+    }
     #sidebar {
-        width: 60px;
+        width: 72px;
     }
     #sidebar span {
         display: none;
+    }
+    #blue-hero div{
+        min-width: 270px;
     }
 }
