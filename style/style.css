@@ -5,6 +5,9 @@ a {
 ul {
     list-style: none;
 }
+h1 {
+    display: inline-block;
+}
 /* my style */
 .-ls-debug {
     border: 1px solid red;
@@ -17,10 +20,24 @@ ul {
 .-ls-number {
     font-size: 2em;
 }
+.-ls-badge-bg {
+    background-color: var(--color-badge-hero);
+    border-radius: 20px;
+    font-size: .7em;
+    font-weight: 300;
+}
+.-ls-badge-bg:hover {
+    cursor: pointer;
+    background-color: #165aba8c;
+}
+#badge-plus {
+        display: none;
+}
 /* general */
 :root {
     --color-ls-hero-bg: #1b72e8;
     --color-ls-sidebar-bg: #051e34;
+    --color-badge-hero: #165bba;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -70,6 +87,9 @@ main {
 #blue-hero {
     background-color: #1B72E8
 }
+.offcanvas.offcanvas-end {
+    width: 50%;
+}
 
 .graph-link {
     text-decoration: underline;
@@ -77,8 +97,6 @@ main {
 .data-width {
     min-width: 105px;
 }
-/* modal */
-
 /* media query */
 @media  screen and (max-width:576px) {
     .list-none {
@@ -107,4 +125,23 @@ main {
     #blue-hero div{
         min-width: 270px;
     }
+    #nav-icon>*:not(:last-child){
+        display: none;
+    }
+    .badge-none {
+        display: none;
+    }
+    #badge-plus {
+        display: inline-block;
+    }
+    #ls-blue-1 {
+        order: 1;
+    }
+    #ls-blue-2 {
+        order: 2;
+    }
+    .offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
 }

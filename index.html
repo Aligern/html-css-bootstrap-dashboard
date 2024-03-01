@@ -24,11 +24,13 @@
     <header>
         <!-- nav bar -->
       <nav class="fixed-top z-1 bg-light">
-        <div class="container-fluid p-0  d-flex justify-content-between  bg-white">
-            <div class="align-self-center ps-2 pe-2 ">
+        <div class="container-fluid p-0 d-flex justify-content-between ">
+            <!-- logo container -->
+            <div class="align-self-center bg-white pe-2 ps-2">
                 <img src="./img/logo.svg" id="logo-big" alt="logo">
                 <img src="./img/mobile-logo.png" id="logo-small" alt="">
             </div>
+            <!-- search bar here -->
             <div class="w-100">
                 <nav class="navbar bg-body-tertiary">
                     <form class="container-fluid">
@@ -41,8 +43,9 @@
                     </form>
                   </nav>
             </div>
-            <div class="ps-2 pe-2 d-flex justify-content-between">
-               <button class="border-0 bg-transparent  align-self-center m-1">
+            <!-- buttons -->
+            <div id="nav-icon" class="ps-2 pe-2 d-flex justify-content-between">
+               <button class="border-0 bg-transparent align-self-center m-1">
                 <i class="fa-solid fa-list-ul"></i>
                </button>
                <button class="border-0 bg-transparent align-self-center m-1">
@@ -52,7 +55,7 @@
                 <i class="fa-solid fa-ellipsis-vertical"></i>
                </button>
                <div class="align-self-center">
-                   <button class="border-0 bg-transparent m-1 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                   <button class="border-0 bg-transparent m-1 " data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-bell text-warning"></i>
                    </button>
                    <ul class="dropdown-menu dropdown-menu-end">
@@ -71,7 +74,7 @@
         </div>
       </nav>
     </header>
-
+    <!-- wrapper container -->
     <div id="wrapper" class="vh-100 d-flex">
       <!-- sidebar -->
       <div id="sidebar">
@@ -106,17 +109,51 @@
             </span>
        </div>
     </div>
-
       <!-- main -->
-      <main>
-        <!-- hero blue here -->
+      <main class="bg-light">
+        <!-- hero blue -->
         <div id="blue-hero" class="p-3 text-white d-flex justify-content-between flex-wrap mb-2 mt">
-            <div id="ls-blue-1" class="order-1">
+            <!-- left -->
+            <div id="ls-blue-1" class="p-1" >
                 <h1>
                     Boolean
                 </h1>
+                <span>
+                    <span class="badge -ls-badge-bg">
+                        Piano blaze
+                    </span>
+                </span>
+                <div>
+                    <span>
+                        <span class="badge -ls-badge-bg">
+                            3 app
+                        </span>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-angles-right"></i>
+                    </span>
+                    <span id="badge-plus" class="badge -ls-badge-bg">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span>
+                        <span class="badge badge-none -ls-badge-bg">
+                           Boolean mobile app
+                        </span>
+                    </span>
+                    <span>
+                        <span class="badge badge-none -ls-badge-bg">
+                           Boolean web app
+                        </span>
+                    </span>
+                    <span>
+                        <span class="badge badge-none -ls-badge-bg">
+                           Boolean blog app
+                        </span>
+                    </span>
+                </div>
             </div>
-            <div id="ls-blue-2" class="order-2">
+            <!-- mid -->
+            <div id="ls-blue-2" class="p-1" >
                 <span>
                     Studenti online negli ultimi 30 minuti 
                 </span>
@@ -124,9 +161,10 @@
                     125
                 </div>
             </div>
-            <div id="ls-blue-3" class="order-0">
+            <!-- right -->
+            <div id="ls-blue-3" class="p-1 " >
                 Nuovo Studente
-                <!-- offcanvas da fixare -->
+                <!-- offcanvas -->
                 <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                     <i class="fa-solid fa-plus"></i>
                 </button>
@@ -135,11 +173,120 @@
         <!-- offcanvas -->
         <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                Inserisci un nuovo studente
+            </h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+    <!-- //////***costruito a mano da qui in poi***/////  -->
             <div class="offcanvas-body">
-              <p>Try scrolling the rest of the page to see this option in action.</p>
+                <div class="row">
+                    <!-- form name -->
+                    <div class="col-6 mb-3">
+                        <label for="name">
+                            Nome
+                        </label>
+                      <input type="text" class="form-control" placeholder="
+                      " aria-label="First name">
+                    </div>
+                    <!-- form last name -->
+                    <div class="col-6 mb-3">
+                        <label for="last name">
+                            Cognome
+                        </label>
+                      <input type="text" class="form-control" placeholder="" aria-label="Last name">
+                    </div>
+                    <!-- email -->
+                    <div class="col-6 mb-3">
+                        <label for="email">
+                            Email
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1" >@</span>
+                            <input type="text" class="form-control"
+                            placeholder="" aria-label="email">
+                        </div>
+                    </div>
+                    <!-- password -->
+                    <div class="col-6 mb-3">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input type="password" class="form-control" placeholder="" aria-label="password">
+                    </div>
+                    <!-- email address -->
+                    <div class="col-6 mb-3">
+                        <label for="email">
+                            Indirizzo Email
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1" >@</span>
+                            <input type="text" class="form-control"
+                            placeholder="" aria-label="email">
+                        </div>
+                    </div>
+                    <!-- password 2 -->
+                    <div class="col-6 mb-3">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input type="password" class="form-control" placeholder="" aria-label="password">
+                    </div>
+                    <!-- address -->
+                    <div class="col-12 mb-3">
+                        <label for="password">
+                            indirizzo
+                        </label>
+                        <input type="address" class="form-control" placeholder="" aria-label="address">
+                    </div>
+                    <!-- city infos-->
+                    <div class="col-6 mb-3">
+                        <!-- city -->
+                        <label for="city">
+                            Città
+                        </label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <!-- state -->
+                    <div class="col-4 mb-3">
+                        <label for="state">
+                            Stato
+                        </label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <!-- postalcode -->
+                    <div class="col-2 mb-3">
+                        <label for="postalcode">
+                            CAP
+                        </label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <!-- photos -->
+                    <div class="col-12 mb-3">
+                        <label for="foto">
+                            Foto
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1" >Scegli File</span>
+                            <input type="text" class="form-control"
+                            placeholder="Nessun File Selezionato" aria-label="foto">
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3 ">
+                        <input type="checkbox">
+                        <span>
+                            Seleziona per proseguire
+                        </span>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary">
+                            Salva
+                        </button>
+                        <button type="button" class="btn btn-warning">
+                            Svuota
+                        </button>
+                    </div>
+                </div>
             </div>
           </div>
         <!-- main container -->
