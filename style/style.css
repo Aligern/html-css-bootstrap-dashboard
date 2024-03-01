@@ -52,8 +52,6 @@ nav {
 main {
     width: calc(100% - 150px);
     padding-top: 60px;
-    overflow-y: auto;
-    height: 100%;
 }
 #sidebar {
     width: 150px;
