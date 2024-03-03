@@ -237,13 +237,12 @@
                   >
                 </div>
                 <!-- address -->
-                <div class="col-12 col-md-6 col-sm-12 mb-3">
+                <div class="col-12 mb-3">
                   <label> indirizzo </label>
                   <input
                     type="text"
                     class="form-control"
-                    aria-label="address"
-                  >
+                    aria-label="address">
                 </div>
                 <!-- city infos-->
                 <div class="col-6 col-md-6 col-sm-12 mb-3">
@@ -251,12 +250,18 @@
                   <input type="text" class="form-control" >
                 </div>
                 <!-- state -->
-                <div class="col-4 col-md-6 col-sm-12 mb-3">
-                  <label> Stato </label>
-                  <input type="text" class="form-control" >
+                <div class="form-group col-4 col-md-4 col-sm-12  mb-3">
+                  <label for="inputState">State</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Scegli...</option>
+                    <option>Italia</option>
+                    <option>Francia</option>
+                    <option>Germania</option>
+                    <option>Spagna</option>
+                  </select>
                 </div>
                 <!-- postalcode -->
-                <div class="col-2 col-md-6 col-sm-12 mb-3">
+                <div class="col-2 col-md-2 col-sm-12 mb-3">
                   <label> CAP </label>
                   <input type="text" class="form-control" >
                 </div>

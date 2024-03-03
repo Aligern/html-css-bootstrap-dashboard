@@ -96,11 +96,6 @@ main {
     min-width: 105px;
 }
 /* media query */
-@media screen and (max-width:576px) {
-    .list-none {
-        display: none;
-    }
-}
 @media screen and (max-width:768px) {
     main {
         width: 100%;
@@ -140,5 +135,10 @@ main {
     }
     .offcanvas.offcanvas-end {
         width: 100%;
+    }
+}
+@media screen and (max-width:576px) {
+    .list-none {
+        display: none;
     }
 }
